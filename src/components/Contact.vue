@@ -28,6 +28,7 @@ h1 {
   font-weight: 800;
   margin-bottom: 30px;
   letter-spacing: -0.025em;
+  text-align: center;
 }
 
 .card {
@@ -48,6 +49,7 @@ p {
   border-bottom: 1px solid #f1f5f9;
   color: #64748b;
   font-size: 1.1rem;
+  gap: 10px;
 }
 
 p:last-child {
@@ -60,9 +62,44 @@ strong {
   text-transform: uppercase;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
+  white-space: nowrap;
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
 
+  .card {
+    padding: 25px;
+    max-width: 90%;
+  }
 
+  p {
+    font-size: 1rem;
+  }
+}
 
+@media screen and (max-width: 480px) {
+  .contact {
+    padding: 15px;
+    min-height: auto;
+    margin-top: 40px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  strong {
+    font-size: 0.75rem;
+  }
+}
 </style>
